@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="=ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Let's speak языковая школа</title>
+</head>
+<body>
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html"><svg><use xlink:href="#logo"></use></svg></a>
+    <form action="" class="search">
+      <label>
+        <input type="search">
+      </label>
+    </form>
+    <ul class="user-nav">
+      <li class="user-nav__profile"></li>
+      <li class="user-nav__notifications"></li>
+    </ul>
+  </header>
+  <nav class="main-nav">
+    <ul class="main-nav__list">
+      <li class="man-nav__list-item"><a href="#">Кабинет ученика</a></li>
+      <li class="man-nav__list-item"><a href="#">Учебный класс</a></li>
+      <li class="man-nav__list-item"><a href="#">Методичка</a></li>
+      <li class="man-nav__list-item"><a href="#">Домашняя работа</a></li>
+      <li class="man-nav__list-item"><a href="#">Экзамены</a></li>
+    </ul>
+  </nav>
+  <main class="main-content">
+    <div class="slider">
+      <ul class="slider__list">
+        <li class="slider__item">
+          <h2 class="slider__item-title">
+            «Бифитер», «Кокни», «Даблдекер»...
+          </h2>
+          <p class="slider__item-text">
+            Пройдите тест и узнайте насколько хорошо вы знакомы с жизнью в Лондоне
+          </p>
+          <button class="slider__item-btn" type="button">Пройти тест</button>
+        </li>
+      </ul>
+      <button class="slider__control slider-control--prev"></button>
+      <button class="slider__control slider-control--next"></button>
+    </div>
+    <div class="offer">
+      <h3 class="offer__title">Английский завтрак</h3>
+      <p class="offer__text">Разговорный клуб</p>
+      <p class="offer__text-emphasis">10:00 — 11:00 (ПН—ПТ)</p>
+      <a href="#">Записаться</a>
+    </div>
+    <div class="offer">
+      <h3 class="offer__title">Лето в Лондоне</h3>
+      <p class="offer__text">Месяц экскурсий и практики</p>
+      <p class="offer__text-emphasis">10 июня — 3 июля</p>
+      <a href="#">Отправиться</a>
+    </div>
+    <div class="offer">
+      <h3 class="offer__title">Надоел английский?</h3>
+      <p class="offer__text">С нами можно выучить и другие языки</p>
+      <a href="#">Открыть список</a>
+    </div>
+    <video poster="" src="" class="video"></video>
+    <section class="course">
+      <h3 class="course__title">Курс English A1</h3>
+      <ul class="course__list">
+        <li class="course__list-item lesson">
+          <button class="lesson__play"></button>
+          <h4 class="lesson__title">
+            Урок 8
+            <span class="lesson__theme">Времена глаголов</span>
+          </h4>
+        </li>
+        <li class="course__list-item lesson">
+          <button class="lesson__play"></button>
+          <h4 class="lesson__title">
+            Урок 9
+            <span class="lesson__theme">Неправильные глаголы</span>
+          </h4>
+        </li>
+        <li class="course__list-item lesson">
+          <button class="lesson__play"></button>
+          <h4 class="lesson__title">
+            Урок 10
+            <span class="lesson__theme">Present Simple</span>
+          </h4>
+        </li>
+        <li class="course__list-item lesson">
+          <button class="lesson__play"></button>
+          <h4 class="lesson__title">
+            Урок 11
+            <span class="lesson__theme">Past Simple</span>
+          </h4>
+        </li>
+        <li class="course__list-item lesson">
+          <button class="lesson__play"></button>
+          <h4 class="lesson__title">
+            Урок 12
+            <span class="lesson__theme">Present Continuous</span>
+          </h4>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <section class="contacts">
+    <h2 class="contacts__title">Контакты</h2>
+    <ul class="contacts__list">
+      <li class="contacts__list-item contact">
+        <span class="contact__name">Неопознанный Енот</span>
+        <span class="contact__theme">English A1</span>
+      </li>
+      <li class="contacts__list-item contact">
+        <span class="contact__name">Неопознанный Енот</span>
+        <span class="contact__theme">Español 2</span>
+      </li>
+      <li class="contacts__list-item contact">
+        <span class="contact__name">Неопознанный Енот</span>
+        <span class="contact__theme">日本語</span>
+      </li>
+      <li class="contacts__list-item contact">
+        <span class="contact__name">Неопознанный Енот</span>
+        <span class="contact__theme">English B2</span>
+      </li>
+      <li class="contacts__list-item contact">
+        <span class="contact__name">Неопознанный Енот</span>
+        <span class="contact__theme">Le Français</span>
+      </li>
+      <li class="contacts__list-item contact">
+        <span class="contact__name">Неопознанный Енот</span>
+        <span class="contact__theme">Español 1</span>
+      </li>
+      <li class="contacts__list-item contact">
+        <span class="contact__name">Неопознанный Енот</span>
+        <span class="contact__theme">Italiano</span>
+      </li>
+    </ul>
+  </section>
+  <footer class="main-footer">
+    <p class="copyrights">© 2020</p>
+    <p class="company-name">Let’s Speak, языковая школа</p>
+    <p class="created-by">Сайт создан в HTML Academy</p>
+  </footer>
+</body>
+</html>
