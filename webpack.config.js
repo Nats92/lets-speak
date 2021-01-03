@@ -7,8 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    styles: './src/scss/index.scss',
-    scripts: './src/js/index.js',
+    bundle: './index.js'
   },
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -16,6 +15,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
       {
         test: /\.scss/,
         exclude: /node_modules/,
@@ -76,9 +79,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
-    new HtmlWebpackPlugin({  // Also generate a test.html
+    new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/index.html'
+      template: 'src/html/index.html'
     })
   ],
   devServer: {
