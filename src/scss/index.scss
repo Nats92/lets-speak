@@ -1,7 +1,41 @@
-$color: red;
+$base-gray: #F1F3FE;
+
+.main-body {
+  display: grid;
+  grid-template-columns: 280px 820px 260px;
+  padding: 0;
+  margin: 0;
+  background-color: $base-gray;
+}
 
 .main-header {
+  grid-column: 1 / -1;
+  background-color: blue;
   display: flex;
   align-items: center;
   background-image: url(../images/academy-hat.svg);
+}
+
+.main-nav {
+  grid-column: 1 / 2;
+  background-color: darkcyan;
+}
+
+.main-content {
+  grid-column: 2 / -2;
+  margin: 30px;
+  margin-right: 20px;
+  background-color: violet;
+}
+
+.contacts {
+  grid-column: -2 / -1;
+  margin: 30px;
+  margin-left: 0;
+  background-color: honeydew;
+}
+
+.main-footer {
+  background-color: aqua;
+  grid-column: 1 / -1;
 }

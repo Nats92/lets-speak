@@ -2,6 +2,7 @@ var path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
 
 
 module.exports = {
@@ -42,8 +43,8 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'images/[name].[ext]',
-              publicPath: 'build',
+              name: '/[name].[ext]',
+              publicPath: 'images',
             },
           },
           {
@@ -65,9 +66,13 @@ module.exports = {
               webp: {
                 quality: 75
               },
-              svgo: {
-                removeViewBox: false
-              },
+              svgo:{
+                plugins: [
+                  {
+                    removeViewBox: false
+                  }
+                ]
+              }
             }
           },
         ]
@@ -82,6 +87,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/html/index.html'
+    }),
+    new HtmlWebpackInlineSVGPlugin({
+      runPreEmit: true,
+      inlineAll: true
     })
   ],
   devServer: {
