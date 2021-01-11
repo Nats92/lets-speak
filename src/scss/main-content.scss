@@ -1,0 +1,5 @@
+.main-content {
+  display: grid;
+  grid-template-rows: 300px 1fr 300px;
+  grid-gap: 20px;
+}

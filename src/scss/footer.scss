@@ -1,0 +1,28 @@
+.main-footer {
+  background-color: $violet;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 280px 1fr 280px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba($white, .5);
+}
+
+.company-name {
+  text-align: center;
+  margin: 0;
+}
+
+.medium-text {
+  font-weight: 500;
+}
+
+.copyrights {
+  margin: 0;
+}
+
+.created-by {
+  margin: 0;
+}

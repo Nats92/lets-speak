@@ -1,0 +1,53 @@
+.main-header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 246px 51px;
+  background-color: $white;
+  border-bottom: 1px solid $blue;
+  padding: 20px 25px 19px 25px;
+  box-sizing: border-box;
+}
+
+.main-header__user-profile {
+  border-right: 1px solid $light-gray;
+}
+
+.main-header__notifications {
+  position: relative;
+  width: 18px;
+  height: 20px;
+  margin: auto 0 auto 30px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  background-image: url(../images/bell.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-header__notifications_with-counter {
+  &::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -6px;
+    top: -12px;
+    width: 14px;
+    height: 14px;
+    content: attr(data-counter);
+    background-color: $orange;
+    border-radius: 50%;
+    border: 2px solid $white;
+    color: $white;
+    font-size: 10px;
+  }
+}
+
+.main-header__logo {
+  display: block;
+  width: 280px;
+  box-sizing: border-box;
+  padding: 24px 30px 20px;
+}

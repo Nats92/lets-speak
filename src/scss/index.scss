@@ -1,41 +1,33 @@
-$base-gray: #F1F3FE;
+@import "colors";
+@import "user-profile";
+@import "header";
+@import "nav";
+@import "user-panel";
+@import "contacts";
+@import "slider";
+@import "video";
+@import "offers";
+@import "course";
+@import "footer";
+@import "main-content";
+@import "content";
+@import "search";
+@import "main-nav";
 
 .main-body {
+  max-width: 1440px;
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: 280px 820px 260px;
+  grid-template-areas:
+    "nav    header"
+    "nav    main"
+    "footer footer";
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: repeat(3, auto);
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   background-color: $base-gray;
-}
-
-.main-header {
-  grid-column: 1 / -1;
-  background-color: blue;
-  display: flex;
-  align-items: center;
-  background-image: url(../images/academy-hat.svg);
-}
-
-.main-nav {
-  grid-column: 1 / 2;
-  background-color: darkcyan;
-}
-
-.main-content {
-  grid-column: 2 / -2;
-  margin: 30px;
-  margin-right: 20px;
-  background-color: violet;
-}
-
-.contacts {
-  grid-column: -2 / -1;
-  margin: 30px;
-  margin-left: 0;
-  background-color: honeydew;
-}
-
-.main-footer {
-  background-color: aqua;
-  grid-column: 1 / -1;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
 }

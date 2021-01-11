@@ -1,0 +1,8 @@
+.content {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 820px 260px;
+  grid-gap: 20px;
+  margin: 30px;
+  margin-right: 20px;
+}
