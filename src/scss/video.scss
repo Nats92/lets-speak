@@ -1,0 +1,29 @@
+.course-block__video {
+  background-color: $white;
+  border-radius: 4px;
+  width: 100%;
+  overflow: hidden;
+
+  &.play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      width: 64px;
+      height: 64px;
+      background-position: 24px center;
+    }
+  }
+}
+
+.play {
+  &::after {
+    position: absolute;
+    content: '';
+    border-radius: 4px;
+    background-color: $base-violet;
+    background-image: url(../images/play.svg);
+    background-repeat: no-repeat;
+  }
+}

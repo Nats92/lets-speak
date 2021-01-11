@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="=ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+  <title>Let's speak языковая школа</title>
+</head>
+<body class="main-body">
+  <header class="main-header">
+    <form action="" class="search">
+      <label class="search__label">
+        <input class="search__input" type="search" placeholder="Поиск...">
+      </label>
+    </form>
+    <a href="#" class="main-header__user-profile user-profile user-profile_with-arrow" data-letter="О">Опознанный Енот</a>
+    <button type="button" class="main-header__notifications main-header__notifications_with-counter" data-counter="1"></button>
+  </header>
+  <nav class="main-nav">
+    <a class="main-header__logo" href="#"><img src="../images/logo.svg" alt="Let's speak языковая школа"></a>
+    <ul class="main-nav__list">
+      <li><a class="nav__item nav__item_cab nav__item_current" href="#">Кабинет ученика</a></li>
+      <li><a class="nav__item nav__item_study" href="#">Учебный класс</a></li>
+      <li><a class="nav__item nav__item_manual" href="#">Методичка</a></li>
+      <li><a class="nav__item nav__item_home-work" href="#">Домашняя работа</a></li>
+      <li><a class="nav__item nav__item_exam" href="#">Экзамены</a></li>
+    </ul>
+    <ul class="main-nav__list">
+      <li><a class="nav__item nav__item_settings" href="#">Настройки</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <main class="main-content">
+      <div class="slider">
+        <ul class="slider__list">
+          <li class="slider__item">
+            <div class="slider__item-inner-container">
+              <h2 class="slider__item-title">«Бифитер», «Кокни», «Даблдекер»...</h2>
+              <p class="slider__item-text">
+                Пройдите тест и узнайте насколько хорошо вы знакомы с жизнью в Лондоне
+              </p>
+              <button class="slider__item-btn" type="button">Пройти тест ➞</button>
+            </div>
+          </li>
+        </ul>
+        <button class="slider__control slider-control--prev"></button>
+        <button class="slider__control slider-control--next"></button>
+      </div>
+      <ul class="offers">
+        <li class="offer">
+          <h3 class="offer__title">Английский завтрак</h3>
+          <p class="offer__text">Разговорный клуб</p>
+          <p class="offer__schedule">10:00 — 11:00 (ПН—ПТ)</p>
+          <a class="offer__btn" href="#">Записаться ➞</a>
+        </li>
+        <li class="offer">
+          <h3 class="offer__title">Лето в Лондоне</h3>
+          <p class="offer__text">Месяц экскурсий и практики</p>
+          <p class="offer__schedule">10 июня — 3 июля</p>
+          <a class="offer__btn" href="#">Отправиться ➞</a>
+        </li>
+        <li class="offer">
+          <h3 class="offer__title">Надоел английский?</h3>
+          <p class="offer__text">С нами можно выучить и другие языки</p>
+          <a class="offer__btn" href="#">Открыть список ➞</a>
+        </li>
+      </ul>
+      <div class="course-block">
+        <div class="course-block__video play">
+          <video poster="../images/video-poster.jpg" src="#" class="video"></video>
+        </div>
+        <section class="course">
+        <h3 class="course__title">Курс English A1</h3>
+        <ul class="course__list">
+          <li class="course__list-item nav__item play">
+            <h4 class="course__list-item-title">
+              Урок 8
+              <span class="course__list-item-theme">Времена глаголов</span>
+            </h4>
+          </li>
+          <li class="course__list-item nav__item nav__item_current play">
+            <h4 class="course__list-item-title">
+              Урок 9
+              <span class="course__list-item-theme">Неправильные глаголы</span>
+            </h4>
+          </li>
+          <li class="course__list-item nav__item play">
+            <h4 class="course__list-item-title">
+              Урок 10
+              <span class="course__list-item-theme">Present Simple</span>
+            </h4>
+          </li>
+          <li class="course__list-item nav__item play">
+            <h4 class="course__list-item-title">
+              Урок 11
+              <span class="course__list-item-theme">Past Simple</span>
+            </h4>
+          </li>
+          <li class="course__list-item nav__item play">
+            <h4 class="course__list-item-title">
+              Урок 12
+              <span class="course__list-item-theme">Present Continuous</span>
+            </h4>
+          </li>
+        </ul>
+      </section>
+      </div>
+    </main>
+    <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <ul class="contacts__list">
+        <li data-letter="Н" class="contacts__list-item user-profile user-profile_marked">
+          <span class="contact__name">Неопознанный Енот</span>
+          <span class="contact__theme">English A1</span>
+        </li>
+        <li data-letter="Н" class="contacts__list-item user-profile user-profile_marked">
+          <span class="contact__name">Неопознанный Енот</span>
+          <span class="contact__theme">Español 2</span>
+        </li>
+        <li data-letter="Н" class="contacts__list-item user-profile user-profile_marked">
+          <span class="contact__name">Неопознанный Енот</span>
+          <span class="contact__theme">日本語</span>
+        </li>
+        <li data-letter="Н" class="contacts__list-item user-profile user-profile_marked">
+          <span class="contact__name">Неопознанный Енот</span>
+          <span class="contact__theme">English B2</span>
+        </li>
+        <li data-letter="Н" class="contacts__list-item user-profile">
+          <span class="contact__name">Неопознанный Енот</span>
+          <span class="contact__theme">Le Français</span>
+        </li>
+        <li data-letter="Н" class="contacts__list-item user-profile">
+          <span class="contact__name" data-letter="Н">Неопознанный Енот</span>
+          <span class="contact__theme">Español 1</span>
+        </li>
+        <li data-letter="Н" class="contacts__list-item user-profile">
+          <span class="contact__name">Неопознанный Енот</span>
+          <span class="contact__theme">Italiano</span>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <footer class="main-footer">
+    <p class="copyrights">© 2020</p>
+    <p class="company-name"><span class="medium-text">Let’s Speak</span>, языковая школа</p>
+    <p class="created-by">Сайт создан в HTML Academy</p>
+  </footer>
+</body>
+</html>

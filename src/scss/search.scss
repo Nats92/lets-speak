@@ -1,0 +1,28 @@
+.search__label {
+  position: relative;
+  padding-left: 32px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    width: 20px;
+    height: 20px;
+    content: '';
+    background-image: url(../images/search.svg);
+    background-size: contain;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.search__input {
+  flex-grow: 1;
+  padding: 11px 0;
+  border: 0;
+  font-size: 16px;
+  color: $light-blue;
+}
+
+.search__input::placeholder {
+  color: $light-blue;
+}

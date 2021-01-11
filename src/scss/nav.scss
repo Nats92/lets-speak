@@ -1,0 +1,97 @@
+.main-nav {
+  grid-area: nav;
+  display: grid;
+  grid-template-rows: 80px 1fr auto;
+  background-color: $white;
+  border-right: 1px solid $blue;
+  z-index: 1;
+}
+
+.main-nav__list {
+  width: calc(100% - 1px);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: $violet;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+
+  &::after {
+    position: absolute;
+    left: 31px;
+  }
+}
+
+.nav__item_current {
+  color: $base-violet;
+  background-color: $base-gray;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background-image: url(../images/border.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 100%;
+  }
+}
+
+.nav__item_cab::after {
+  background-image: url(../images/union.svg);
+  background-size: contain;
+  content: '';
+  width: 18px;
+  height: 18px;
+}
+
+.nav__item_study::after {
+  width: 20px;
+  height: 20px;
+  content: '';
+  background-image: url(../images/academy-hat.svg);
+  background-size: contain;
+}
+
+.nav__item_manual::after {
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/book.svg);
+  background-size: contain;
+  content: '';
+}
+
+.nav__item_home-work::after {
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/house.svg);
+  background-size: contain;
+  content: '';
+}
+
+.nav__item_exam::after {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/exam.svg);
+  background-size: contain;
+  content: '';
+}
+
+.nav__item_settings::after {
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/settings.svg);
+  background-size: contain;
+  content: '';
+}

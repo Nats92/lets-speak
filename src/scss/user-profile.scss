@@ -1,0 +1,54 @@
+.user-profile {
+  position: relative;
+  min-height: 40px;
+  text-decoration: none;
+  color: $violet;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 52px;
+  font-size: 16px;
+  font-weight: 300;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    content: attr(data-letter);
+    background-color: $base-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: $light-blue;
+    font-size: 22px;
+    font-weight: 900;
+    margin-right: 12px;
+  }
+}
+
+.user-profile_marked {
+  &::after {
+    position: absolute;
+    top: 1px;
+    left: -2px;
+    border-radius: 50%;
+    border: 3px solid $white;
+    width: 8px;
+    height: 8px;
+    background-color: $sky-blue;
+    content: '';
+  }
+}
+
+.user-profile_with-arrow {
+  &::after {
+    width: 12px;
+    height: 6px;
+    content: '';
+    background-image: url(../images/arrow.svg);
+    margin-left: 20px;
+  }
+}

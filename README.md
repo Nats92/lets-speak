@@ -1,1 +1,3 @@
-# lets-speak
+`npm i`
+
+`npm run start`

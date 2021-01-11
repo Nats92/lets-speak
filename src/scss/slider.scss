@@ -1,0 +1,75 @@
+.slider {
+  position: relative;
+  background-color: $base-violet;
+  overflow: hidden;
+}
+
+.slider__list {
+  display: flex;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__item {
+  width: 100%;
+  color: $white;
+  padding: 60px;
+  box-sizing: border-box;
+  background-image: url(../images/big-ben.png);
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  background-color: $white;
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+  background-image: url(../images/thin-arrow.svg);
+  background-size: 9px 18px;
+  background-repeat: no-repeat;
+}
+
+.slider-control--prev {
+  left: 0;
+  transform: translate(-50%, -50%) rotate(180deg);
+  background-position: top 23px right 41px;
+}
+
+.slider-control--next {
+  right: 0;
+  transform: translate(50%, -50%);
+  background-position: top 23px left 14px;
+}
+
+.slider__item-title {
+  font-weight: 900;
+  font-size: 28px;
+}
+
+.slider__item-text {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.slider__item-inner-container {
+  width: 484px;
+}
+
+.slider__item-btn {
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $white;
+  background-color: $orange;
+  border: 0;
+  border-radius: 4px;
+}
