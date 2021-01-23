@@ -23,7 +23,7 @@
     "nav    main"
     "footer footer";
   grid-template-columns: 280px 1fr;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: 80px 1fr auto;
   padding: 0;
   margin: 0 auto;
   background-color: $base-gray;
